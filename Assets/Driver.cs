@@ -8,6 +8,8 @@ public class Driver : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float boostSpeed = 20f;
     [SerializeField] float bumpSpeed = 5f;
+    [SerializeField] ParticleSystem CrashEffect;
+    
 
     void Start()
     {
@@ -23,10 +25,13 @@ public class Driver : MonoBehaviour
                 moveSpeed = bumpSpeed;
                 
             }
+
+            
         }
 
     void OnCollisionEnter2D(Collision2D other) {
         moveSpeed = 10f;
+        CrashEffect.Play();
     }
 
     // Update is called once per frame
