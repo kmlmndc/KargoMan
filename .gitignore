@@ -1,0 +1,76 @@
+# ========================================================
+# Unity + Visual Studio Git Ignore
+# ========================================================
+
+# Unity tarafından oluşturulan klasörler
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# Cache ve geçici veriler
+sysinfo.txt
+*.stacktrace
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# Visual Studio ve Rider dosyaları
+.vs/
+.idea/
+.vscode/
+#*.csproj
+*.unityproj
+#*.sln
+*.user
+*.suo
+*.tmp
+*.userprefs
+*.db
+*.opendb
+*.VC.db
+
+# Paket yönetimi
+# (Packages klasörü kalmalı, ama cache dosyaları hariç)
+Packages/com.unity.package-manager/
+Packages/packages-lock.json
+
+# Build çıktıları
+*.apk
+*.aab
+*.xcodeproj
+*.xcworkspace
+*.ipa
+*.app
+*.exe
+*.dll
+*.so
+*.dylib
+*.bundle
+
+# Unity asset cache
+*.asset
+*.meta
+!Assets/**/*.meta
+!ProjectSettings/**/*.meta
+!Packages/**/*.meta
+
+# Diğer gereksiz dosyalar
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================================================
+# Sonuç:
+# Sadece şu klasörler GitHub'a gidecek:
+# - Assets/
+# - Packages/
+# - ProjectSettings/
+# - (isteğe bağlı) Assembly-CSharp.csproj ve KargoMan.sln
+# ========================================================
